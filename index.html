@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Teguh CCTV Garut - Penjualan CCTV dan jasa instalasi CCTV profesional di Garut Kota.">
+
+<meta name="robots" content="index, follow">
+
+<meta name="author" content="Teguh CCTV Garut">
+
+<meta name="keywords" content="CCTV Garut, jual CCTV Garut, toko CCTV Garut, jasa pasang CCTV Garut, instalasi CCTV Garut">
+
+<title>Teguh CCTV Garut | Jual CCTV & Jasa Instalasi CCTV Garut</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07111f;
+    color: #eef5ff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(5, 13, 25, 0.96);
+    border-bottom: 1px solid #1d3048;
+}
+
+.navin {
+    max-width: 1100px;
+    margin: auto;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 800;
+}
+
+.brandmark {
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #19d3ff, #1464ff);
+    display: grid;
+    place-items: center;
+}
+
+.brandmark svg {
+    width: 25px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #b9c9dc;
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+.hero {
+    background:
+        radial-gradient(circle at 80% 20%, #1554a055, transparent 35%),
+        linear-gradient(135deg, #07111f, #0a1d35);
+    padding: 78px 18px 65px;
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 42px;
+    align-items: center;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #102941;
+    border: 1px solid #254666;
+    border-radius: 99px;
+    padding: 8px 13px;
+    color: #7fe4ff;
+    font-size: 13px;
+}
+
+h1 {
+    font-size: clamp(38px, 6vw, 68px);
+    line-height: 1.03;
+    margin: 18px 0 16px;
+}
+
+.grad {
+    color: #35d7ff;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #b8c8d9;
+    max-width: 650px;
+}
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-weight: 800;
+    border: 1px solid #2d4560;
+    display: inline-block;
+}
+
+.primary {
+    background: #18bff0;
+    color: #00121b;
+    border-color: #18bff0;
+}
+
+.secondary {
+    background: #0c1c2f;
+}
+
+.visual {
+    position: relative;
+    min-height: 330px;
+    display: grid;
+    place-items: center;
+}
+
+.camera {
+    width: 260px;
+    height: 175px;
+    border-radius: 38px 38px 55px 55px;
+    background: linear-gradient(145deg, #f6fbff, #8ba4b9);
+    box-shadow: 30px 35px 60px #0008;
+    position: relative;
+    transform: rotate(-5deg);
+}
+
+.camera:before {
+    content: "";
+    position: absolute;
+    right: -44px;
+    top: 28px;
+    width: 70px;
+    height: 115px;
+    border-radius: 20px;
+    background: #263a4c;
+}
+
+.lens {
+    position: absolute;
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 38% 35%, #83e9ff 0 7%, #1166a8 9% 30%, #03172c 55%);
+    right: 30px;
+    top: 34px;
+    border: 9px solid #263a4c;
+}
+
+.led {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #25e7ff;
+    left: 30px;
+    top: 28px;
+}
+
+.float {
+    position: absolute;
+    background: #0d2035;
+    border: 1px solid #2c4865;
+    padding: 12px 15px;
+    border-radius: 14px;
+    font-size: 13px;
+}
+
+.f1 {
+    top: 20px;
+    right: 5px;
+}
+
+.f2 {
+    bottom: 18px;
+    left: 0;
+}
+
+section {
+    padding: 70px 18px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.title h2 {
+    font-size: 34px;
+    margin: 0 0 10px;
+}
+
+.title p {
+    color: #9fb1c5;
+    margin: 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background: linear-gradient(160deg, #0d2034, #091625);
+    border: 1px solid #203a55;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.card h3 {
+    margin: 0 0 9px;
+}
+
+.card p {
+    color: #a9bacb;
+    line-height: 1.6;
+}
+
+.icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 15px;
+    background: #12314b;
+    display: grid;
+    place-items: center;
+    margin-bottom: 16px;
+    font-size: 25px;
+}
+
+.price {
+    font-size: 29px;
+    font-weight: 900;
+    color: #3fe0ff;
+    margin: 12px 0;
+}
+
+.list {
+    padding: 0;
+    margin: 15px 0 0;
+    list-style: none;
+    color: #b8c8d9;
+    line-height: 2;
+}
+
+.list li:before {
+    content: "✓";
+    color: #35ddaa;
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.cta {
+    background: linear-gradient(135deg, #0e3c62, #071522);
+    border: 1px solid #24577d;
+    border-radius: 26px;
+    padding: 38px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin: 0 0 10px;
+}
+
+.cta p {
+    color: #b8c8d9;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.contactbox {
+    padding: 25px;
+    background: #0c1b2c;
+    border: 1px solid #203b55;
+    border-radius: 18px;
+}
+
+.contactbox strong {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.contactbox span {
+    color: #aabacd;
+}
+
+footer {
+    padding: 30px 18px;
+    border-top: 1px solid #1d3048;
+    color: #8195ab;
+    text-align: center;
+    font-size: 13px;
+}
+
+.wa {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 30;
+    background: #19c96b;
+    color: #001b0c;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 10px 30px #0008;
+}
+
+.wa svg {
+    width: 30px;
+}
+
+@media (max-width: 800px) {
+
+    .menu {
+        display: none;
+    }
+
+    .hero-grid,
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .visual {
+        min-height: 290px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 55px;
+    }
+
+    section {
+        padding: 55px 15px;
+    }
+
+    .camera {
+        transform: scale(0.8) rotate(-5deg);
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="nav">
+
+<div class="navin">
+
+<a class="brand" href="#">
+
+<span class="brandmark">
+
+<svg viewBox="0 0 24 24"
+     fill="none"
+     stroke="white"
+     stroke-width="2">
+
+<path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/>
+
+<circle cx="12" cy="13" r="3"/>
+
+</svg>
+
+</span>
+
+Teguh CCTV Garut
+
+</a>
+
+<div class="menu">
+
+<a href="#layanan">Layanan</a>
+
+<a href="#paket">Paket</a>
+
+<a href="#kontak">Kontak</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<header class="hero">
+
+<div class="wrap hero-grid">
+
+<div>
+
+<span class="badge">
+● Melayani Garut Kota & sekitarnya
+</span>
+
+<h1>
+Keamanan Rumah & Usaha dengan
+<span class="grad">CCTV</span>
+Profesional
+</h1>
+
+<p>
+Penjualan CCTV, pemasangan,
+setting kamera, dan instalasi
+sistem keamanan.
+
+Konsultasikan kebutuhan CCTV
+Anda dengan Teguh CCTV Garut.
+</p>
+
+<div class="btns">
+
+<a class="btn primary"
+   href="#"
+   onclick="bukaWhatsApp('Halo Teguh CCTV Garut, saya ingin konsultasi CCTV'); return false;">
+
+💬 Chat WhatsApp
+
+</a>
+
+<a class="btn secondary"
+   href="#paket">
+
+Lihat Paket →
+
+</a>
+
+</div>
+
+</div>
+
+<div class="visual">
+
+<div class="camera">
+
+<div class="lens"></div>
+
+<div class="led"></div>
+
+</div>
+
+<div class="float f1">
+📹 Kamera HD • Night Vision
+</div>
+
+<div class="float f2">
+🔧 Instalasi rapi & profesional
+</div>
+
+</div>
+
+</div>
+
+</header>
+<section id="layanan">
+
+<div class="wrap">
+
+<div class="title">
+
+<h2>Layanan Kami</h2>
+
+<p>
+Solusi CCTV dari pemilihan perangkat sampai siap digunakan.
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">
+📹
+</div>
+
+<h3>Penjualan CCTV</h3>
+
+<p>
+Paket CCTV untuk rumah, toko,
+kantor, gudang, dan berbagai
+kebutuhan keamanan.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+🔧
+</div>
+
+<h3>Jasa Instalasi</h3>
+
+<p>
+Pemasangan kamera, penarikan
+kabel, konfigurasi DVR/NVR,
+dan pengaturan sistem.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">
+📱
+</div>
+
+<h3>Setting HP</h3>
+
+<p>
+Bantu menghubungkan CCTV
+ke smartphone agar Anda dapat
+memantau dari jarak jauh.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="paket">
+
+<div class="wrap">
+
+<div class="title">
+
+<h2>Paket CCTV</h2>
+
+<p>
+Pilihan paket untuk kebutuhan keamanan Anda.
+</p>
+
+</div>
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>Paket 2 Kamera</h3>
+
+<div class="price">
+Rp3.500.000
+</div>
+
+<ul class="list">
+
+<li>2 kamera CCTV</li>
+
+<li>DVR & perangkat pendukung</li>
+
+<li>Kabel instalasi</li>
+
+<li>Pemasangan</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h3>Paket 4 Kamera</h3>
+
+<div class="price">
+Rp4.600.000
+</div>
+
+<ul class="list">
+
+<li>4 kamera CCTV</li>
+
+<li>DVR & perangkat pendukung</li>
+
+<li>Kabel instalasi</li>
+
+<li>Pemasangan</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h3>Paket 6 Kamera</h3>
+
+<div class="price">
+Rp5.700.000
+</div>
+
+<ul class="list">
+
+<li>6 kamera CCTV</li>
+
+<li>DVR & perangkat pendukung</li>
+
+<li>Kabel instalasi</li>
+
+<li>Pemasangan</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h3>Paket 8 Kamera</h3>
+
+<div class="price">
+Rp7.850.000
+</div>
+
+<ul class="list">
+
+<li>8 kamera CCTV</li>
+
+<li>DVR & perangkat pendukung</li>
+
+<li>Kabel instalasi</li>
+
+<li>Pemasangan</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="wrap">
+
+<div class="cta">
+
+<h2>
+Butuh CCTV untuk Rumah atau Toko?
+</h2>
+
+<p>
+Hubungi Teguh CCTV Garut
+untuk konsultasi dan penawaran
+sesuai kebutuhan.
+</p>
+
+<a class="btn primary"
+   href="#"
+   onclick="bukaWhatsApp('Halo Teguh CCTV Garut, saya ingin memesan paket CCTV'); return false;">
+
+Pesan Sekarang
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="kontak">
+
+<div class="wrap">
+
+<div class="title">
+
+<h2>Hubungi Kami</h2>
+
+<p>
+Silakan hubungi untuk konsultasi CCTV.
+</p>
+
+</div>
+
+<div class="contact">
+
+
+<div class="contactbox">
+
+<strong>
+📱 WhatsApp
+</strong>
+
+<span>
+0857-9522-3949
+</span>
+
+</div>
+
+
+<div class="contactbox">
+
+<strong>
+📍 Alamat
+</strong>
+
+<span>
+Garut Kota, Jawa Barat
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+© 2026 Teguh CCTV Garut
+• Penjualan & Jasa Instalasi CCTV
+
+</footer>
+
+
+<a class="wa"
+   href="#"
+   onclick="bukaWhatsApp('Halo Teguh CCTV Garut'); return false;"
+   aria-label="WhatsApp">
+
+<svg viewBox="0 0 24 24"
+     fill="currentColor">
+
+<path d="M20 3.9A10 10 0 0 0 3.7 16.2L2.8 21l4.9-.9A10 10 0 1 0 20 3.9Zm-8 17a8.3 8.3 0 0 1-4.2-1.1l-.3-.2-2.9.5.5-2.8-.2-.3a8.4 8.4 0 1 1 7.1 3.9Zm4.6-6.2c-.3-.2-1.7-.9-2-.9-.3-.1-.5-.1-.7.2l-.8 1c-.2.2-.4.2-.7.1-2-.9-3.3-2.7-3.5-2.9-.2-.3-.2-.5 0-.7l.5-.6c.2-.2.2-.4.3-.6 0-.2 0-.4-.1-.6l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.6c-.2 0-.5.1-.7.3-.2.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.8 4.2 2.8 1.1 2.8.7 3.3.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.4-.6-.4Z"/>
+
+</svg>
+
+</a>
+<script>
+
+function bukaWhatsApp(pesan) {
+
+    const nomor = "6285795223949";
+
+    const teks = encodeURIComponent(pesan);
+
+    const whatsappApp =
+        "whatsapp://send?phone=" +
+        nomor +
+        "&text=" +
+        teks;
+
+    const whatsappWeb =
+        "https://wa.me/" +
+        nomor +
+        "?text=" +
+        teks;
+
+    let aplikasiTerbuka = false;
+
+    function aplikasiBerpindah() {
+
+        aplikasiTerbuka = true;
+
+    }
+
+    document.addEventListener(
+        "visibilitychange",
+        aplikasiBerpindah,
+        { once: true }
+    );
+
+    window.location.href = whatsappApp;
+
+    setTimeout(function () {
+
+        if (
+            !aplikasiTerbuka &&
+            document.visibilityState === "visible"
+        ) {
+
+            window.location.href = whatsappWeb;
+
+        }
+
+    }, 1500);
+
+}
+
+</script>
+
+
+</body>
+
+</html>
